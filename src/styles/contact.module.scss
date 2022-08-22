@@ -1,0 +1,87 @@
+@import './font-variables';
+@import './colors';
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.layout {
+  display: flex;
+  text-align: left;
+}
+
+.leftColumn {
+  flex-basis: 50%;
+  padding-right: 10px;
+}
+
+.form {
+  padding: 20px;
+  border: 1px solid rgba(#000, 0.25);
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  label {
+    margin: 0 0 3px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(#000, 0.25);
+    outline: none;
+    background-color: #f9f9f9;
+    color: $text-dark;
+    font-family: $text-font;
+    font-size: 1.6rem;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      border-color: rgba(#000, 0.75);
+    }
+  }
+
+  textarea {
+    height: 300px;
+    resize: none;
+  }
+}
+
+.submitButton {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: $blue;
+  color: $white;
+  font-family: $text-font;
+  font-size: 2rem;
+  font-weight: normal;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.rightColumn {
+  flex-basis: 50%;
+  padding-top: 20px;
+  padding-left: 10px;
+
+  p {
+    margin: 0 0 20px;
+  }
+}
+
+.mapContainer {
+  width: 100%;
+  height: calc(100% * 9 / 16);
+  border: none;
+}
