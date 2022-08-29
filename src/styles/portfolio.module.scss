@@ -1,3 +1,9 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .cardsContainer {
   display: flex;
   justify-content: space-between;
@@ -8,8 +14,8 @@
 .card {
   display: grid;
   place-items: center;
-  flex-basis: 22%;
-  height: 100px;
+  width: 310px;
+  height: calc(310px * 9 / 16);
   margin-bottom: 30px;
   border: 1px solid #ddd;
   border-radius: 4px;

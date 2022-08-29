@@ -10,6 +10,10 @@
   margin: 20px 0 40px;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .menu {
   @include list-reset();
 

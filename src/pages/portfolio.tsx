@@ -4,7 +4,7 @@ import styles from 'styles/portfolio.module.scss';
 
 const Portfolio = () => {
   return (
-    <>
+    <div className={styles.container}>
       <PageTitle text='Moje Portfolio' />
       <div className={styles.cardsContainer}>
         <div className={styles.card}>Chrzciny</div>
@@ -16,7 +16,7 @@ const Portfolio = () => {
         <div className={styles.card}>Romantyczne</div>
         <div className={styles.card}>Inne</div>
       </div>
-    </>
+    </div>
   );
 };
 

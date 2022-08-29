@@ -1,7 +1,32 @@
 @import '../../styles/colors';
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   padding: 20px 0;
   color: $grey;
   font-size: 1.4rem;
+}
+
+.madeBy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: pre;
+}
+
+.logosContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerImage {
+  height: 40px;
+  margin-right: 20px;
+  filter: grayscale(1);
+
+  &:last-child {
+    margin: 0;
+  }
 }

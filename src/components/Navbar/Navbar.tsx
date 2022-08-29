@@ -25,6 +25,7 @@ const Navbar = () => {
         width={120}
         height={100}
         onClick={() => router.push(routes.HOME)}
+        className={styles.logo}
       />
       <ul className={styles.menu}>
         <li

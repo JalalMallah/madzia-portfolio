@@ -20,6 +20,7 @@ const Home = () => {
       >
         Umów się na sesję!
       </button>
+      <div className={styles.backgroundImage} />
     </div>
   );
 };

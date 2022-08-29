@@ -8,7 +8,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Magdalena Sobkiewicz Photography</title>
         <meta name='description' content='Magdalena Sobkiewicz Photography' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
       </Head>
       <HomePage />
     </>

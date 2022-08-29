@@ -5,35 +5,48 @@
   margin: 0;
 }
 
+.backgroundImage {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+}
+
 .title {
   margin: 6rem 0 3rem 0;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .subtitle {
   margin-bottom: 3rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 400;
 }
 
 .cta {
-  border: none;
-  border-radius: 8px;
+  border: 2px solid $text-dark;
   padding: 15px 25px;
-  background-color: $blue;
-  color: $white;
+  background-color: transparent;
+  color: $text-dark;
   font-family: inherit;
-  font-size: 2rem;
+  font-size: 2.5rem;
   cursor: pointer;
-  transition: transform 0.15s ease;
-  will-change: transform;
+  transition: all 0.15s ease;
 
   &:hover {
+    color: $black;
+    border-color: $black;
     transform: scale(1.05);
   }
 }
 
 .name {
-  color: $blue;
+  color: $black;
   font-family: $display-font;
 }
