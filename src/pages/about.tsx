@@ -9,10 +9,7 @@ const About = () => {
       <PageTitle text='O Mnie' />
       <div className={styles.layout}>
         <section className={styles.leftColumn}>
-          <img
-            src='https://images.unsplash.com/photo-1495745966610-2a67f2297e5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
-            alt='Photographer'
-          />
+          <img src='/madzia.jpg' alt='Photographer' />
         </section>
         <section className={styles.rightColumn}>
           <p className={styles.textBox}>
