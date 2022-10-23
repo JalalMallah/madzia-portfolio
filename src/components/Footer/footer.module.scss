@@ -2,9 +2,13 @@
 @import '../../styles/font-variables';
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 25vh;
+  margin: 0 auto;
   padding: 20px 0;
-  border: 2px solid $grey;
   color: $grey;
   font-size: 1.4rem;
   background-color: $white;
@@ -21,13 +25,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 20px;
 }
 
 .footerImage {
-  height: 80px;
+  height: 60px;
   margin-right: 20px;
-  // filter: grayscale(1);
 
   &:last-child {
     margin: 0;
@@ -35,7 +37,9 @@
 }
 
 .footerText {
+  margin: 0 0 20px;
   font-family: $text-font;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
   color: $black;
 }

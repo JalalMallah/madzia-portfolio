@@ -7,17 +7,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0 40px;
+  // width: 1400px;
+  width: 100%;
+  margin: 20px auto 40px;
+  // padding: 0 50px;
 }
 
 .logo {
   cursor: pointer;
 }
 
+.content {
+  display: flex;
+  align-items: center;
+}
+
 .menu {
   @include list-reset();
 
   display: flex;
+  margin-right: 20px;
 }
 
 .menuItem {
@@ -27,6 +36,10 @@
   font-family: $display-font;
   font-size: 1.4rem;
   text-transform: uppercase;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &::after {
     content: '';
@@ -49,5 +62,19 @@
 .active {
   &::after {
     transform: scaleX(1);
+  }
+}
+
+.soMeIcons {
+  display: flex;
+}
+
+.soMeIcon {
+  display: inline-block;
+  width: 20px;
+  cursor: pointer;
+
+  &:first-child {
+    margin-right: 10px;
   }
 }

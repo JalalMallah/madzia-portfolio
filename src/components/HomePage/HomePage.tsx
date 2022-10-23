@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from 'next/router';
 import routes from 'constants/routes';
 
@@ -8,19 +9,39 @@ const Home = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>
-        Nazywam się <span className={styles.name}>Magdalena Sobkiewicz</span>.
-      </h1>
-      <h3 className={styles.subtitle}>
-        Uwieczniam wspomnienia robiąc świetne zdjęcia!
-      </h3>
-      <button
-        className={styles.cta}
-        onClick={() => router.push(routes.CONTACT)}
-      >
-        Umów się na sesję!
-      </button>
-      <div className={styles.backgroundImage} />
+      <div className={styles.leftColumn}>
+        <h1 className={styles.title}>
+          Nazywam się
+          <br /> <span className={styles.name}>Magdalena Sobkiewicz</span>.
+        </h1>
+        <h3 className={styles.subtitle}>
+          Uwieczniam wspomnienia robiąc świetne zdjęcia!
+        </h3>
+        <button
+          className={styles.cta}
+          onClick={() => router.push(routes.CONTACT)}
+        >
+          Umów się na sesję!
+        </button>
+      </div>
+      <div className={styles.rightColumn}>
+        <img
+          src='/images/rodzinne.jpg'
+          alt='home picture'
+          className={`${styles.image} ${styles.firstImage}`}
+        />
+        <img
+          src='/images/inne_pionowe.jpg'
+          alt='home picture'
+          className={`${styles.image} ${styles.secondImage}`}
+        />
+        <img
+          src='/images/romantyczne.jpg'
+          alt='home picture'
+          className={`${styles.image} ${styles.thirdImage}`}
+        />
+      </div>
+      {/* <div className={styles.backgroundImage} /> */}
     </div>
   );
 };

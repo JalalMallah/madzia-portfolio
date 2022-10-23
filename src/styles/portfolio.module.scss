@@ -5,25 +5,7 @@
 }
 
 .cardsContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.card {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   place-items: center;
-  width: 310px;
-  height: calc(310px * 9 / 16);
-  margin-bottom: 30px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: transform 0.15s ease;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 }

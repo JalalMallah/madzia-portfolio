@@ -9,22 +9,23 @@ const About = () => {
       <PageTitle text='O Mnie' />
       <div className={styles.layout}>
         <section className={styles.leftColumn}>
-          <img src='/madzia.jpg' alt='Photographer' />
+          <img src='/images/madzia.jpg' alt='Photographer' />
         </section>
         <section className={styles.rightColumn}>
           <p className={styles.textBox}>
-            Hej, nazywam się Magda. Odkąd pamiętam lubiłam robić zdjęcia. Można
-            powiedzieć, że fotografia była moją pasją od dziecka.
+            Hej, nazywam się Magda. Odkąd pamiętam robienie zdjęć sprawiało mi
+            ogromną przyjemność. Można powiedzieć, że fotografia była moją pasją
+            od dziecka.
           </p>
           <p className={styles.textBox}>
             Biorąc do ręki aparat staje się wrażliwsza na piękno, które mnie
             otacza. Co kocham w fotografii? Autentyczne emocje, które mogę
-            uchwycić . Zdjęcia zatrzymują te ulotne chwile do których każdy z
-            nas z sentymentem powraca.
+            uchwycić. Zdjęcia zatrzymują te ulotne chwile do których każdy z nas
+            z sentymentem powraca.
           </p>
           <p className={styles.textBox}>
             Co mówię osobom, które boją się aparatu, mówią że nie potrafią
-            pozować, nie są fotogeniczni. Nie chodzi o pozy i ładne uśmiechy,
+            pozować, nie są fotogeniczni? Nie chodzi o pozy i ładne uśmiechy,
             chociaż i one się zdarzają. Dla mnie najważniejsza jest naturalność.
             Uważam, że najpiękniejszych chwil w życiu się nie zaplanuje. Tak
             samo jest z fotografiami. Może właśnie tym ulubionym zdjęciem, nie
@@ -33,19 +34,19 @@ const About = () => {
             odwzajemniliśmy.
           </p>
           <p className={styles.textBox}>
-            Właśnie to chcę pokazać na moich zdjęciach. Chcę aby reportaże z
-            wydarzeń były autentyczne i pełne życia. Chcę żeby zdjęcia po latach
+            Właśnie to chcę pokazać na moich zdjęciach. Chcę, aby reportaże z
+            wydarzeń były autentyczne i pełne życia. Chcę, aby zdjęcia po latach
             przywołały w Was te emocje, które wtedy Wam towarzyszyły.
           </p>
           <p className={styles.textBox}>
             Każde przyjęcie to nowi ludzie, miejsca i emocje. Choć wydaje się,
-            że przecież to kolejny: chrzest, komunia , ślub…. jest to coś
-            zupełnie nowego, innego . Do każdego podchodzę indywidualnie,
-            dlatego tez jestem gotowa na szalone pomysły moich klientów. MARZY
-            WAM SIĘ? Napiszcie o tym do mnie.
+            że przecież to kolejny chrzest, komunia, ślub… jest to coś zupełnie
+            nowego, innego. Do każdego podchodzę indywidualnie, dlatego tez
+            jestem gotowa na szalone pomysły moich Klientów. MARZY WAM SIĘ?
+            Napiszcie o tym do mnie.
           </p>
           <p className={styles.textBox}>
-            Przede wszystkim zależy mi na tym, aby moi klienci czuli się
+            Przede wszystkim zależy mi na tym, aby moi Klienci czuli się
             swobodnie i byli zadowoleni z efektów. To jest WASZ dzień, a ja w
             cieniu, ukryta za swoim aparatem chcę Wam towarzyszyć.
           </p>

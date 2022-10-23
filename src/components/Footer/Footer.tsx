@@ -10,12 +10,6 @@ const Footer = () => {
           <u>Jalal Mallah</u>
         </a>
       </div> */}
-      <div className={styles.logosContainer}>
-        <img src='/ue.jpg' alt='UE' className={styles.footerImage} />
-        <img src='/leader.png' alt='Leader' className={styles.footerImage} />
-        <img src='/ster.jpg' alt='Ster' className={styles.footerImage} />
-        <img src='/prow.jpg' alt='PROW' className={styles.footerImage} />
-      </div>
       <div className={styles.footerText}>
         Operacja pn. Wzrost konkurencyjności na rynku województwa łódzkiego
         poprzez zakup profesjonalnego sprzętu fotograficznego oraz założenia
@@ -24,6 +18,12 @@ const Footer = () => {
         ramach inicjatywy LEADER, poddziałanie 19.2 Wsparcie na wdrażanie
         operacji w ramach strategii rozwoju lokalnego kierowanego przez
         społeczność, Programu Rozwoju Obszarów Wiejskich na lata 2014-2020.
+      </div>
+      <div className={styles.logosContainer}>
+        <img src='/ster.jpg' alt='Ster' className={styles.footerImage} />
+        <img src='/ue.jpg' alt='UE' className={styles.footerImage} />
+        <img src='/leader.png' alt='Leader' className={styles.footerImage} />
+        <img src='/prow.jpg' alt='PROW' className={styles.footerImage} />
       </div>
     </footer>
   );

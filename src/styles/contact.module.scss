@@ -85,3 +85,11 @@
   height: calc(100% * 9 / 16);
   border: none;
 }
+
+.loaderContainer {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: calc(100% * 9 / 16);
+  border: none;
+}

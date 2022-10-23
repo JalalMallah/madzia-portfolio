@@ -4,10 +4,13 @@ import PageTitle from 'components/PageTitle';
 
 import styles from '../styles/contact.module.scss';
 
+const Loader = () => <div className={styles.loaderContainer}>Ładuję...</div>;
+
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isMapLoading, setIsMapLoading] = useState(true);
 
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setName(e.currentTarget.value);
@@ -85,11 +88,15 @@ const Contact = () => {
           <p>
             <strong>Adres:</strong> Lipiny 1, 92-701 Łódź
           </p>
+          {isMapLoading && <Loader />}
           <iframe
             className={styles.mapContainer}
-            id='gmap_canvas'
+            style={{
+              display: isMapLoading ? 'none' : 'block',
+            }}
             src='https://maps.google.com/maps?q=Lipiny%201,%2092-701%20%C5%81%C3%B3d%C5%BA&t=&z=13&ie=UTF8&iwloc=&output=embed'
             scrolling='no'
+            onLoad={() => setIsMapLoading(false)}
           />
         </section>
       </div>

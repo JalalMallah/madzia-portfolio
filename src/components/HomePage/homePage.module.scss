@@ -2,24 +2,16 @@
 @import '../../styles/font-variables';
 
 .container {
-  margin: 0;
+  display: flex;
+  margin: 0 auto;
 }
 
-.backgroundImage {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('/background.jpg');
-  background-size: cover;
-  background-position: center 60%;
-  background-repeat: no-repeat;
+.leftColumn {
+  width: 55%;
 }
 
 .title {
-  margin: 6rem 0 3rem 0;
+  margin: 5rem 0 2rem 0;
   font-size: 5rem;
 }
 
@@ -30,13 +22,12 @@
 }
 
 .cta {
-  border: 2px solid $black;
   padding: 15px 25px;
-  background-color: transparent;
-  color: $black;
+  background-color: $black;
+  color: $white;
   font-family: inherit;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.15s ease;
 
@@ -48,4 +39,60 @@
 .name {
   color: $black;
   font-family: $display-font;
+}
+
+.rightColumn {
+  flex: 1;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.image {
+  position: absolute;
+  border-radius: 4px;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+.firstImage {
+  top: 0;
+  left: 60px;
+  width: 260px;
+  height: calc(260px * 9 / 16);
+}
+
+.secondImage {
+  top: 60px;
+  left: 330px;
+  width: 210px;
+}
+
+.thirdImage {
+  top: 156.25px;
+  left: 0;
+  width: 320px;
+  height: calc(320px * 9 / 16);
+}
+
+// .backgroundImage {
+//   z-index: -1;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   background-image: url('/images/background.jpg');
+//   background-size: cover;
+//   background-position: center 90%;
+//   background-repeat: no-repeat;
+// }
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 2.2rem;
+  }
 }
