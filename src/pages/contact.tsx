@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
 import PageTitle from 'components/PageTitle';
+import Loader from 'components/Loader/Loader';
 
 import styles from '../styles/contact.module.scss';
-
-const Loader = () => <div className={styles.loaderContainer}>Ładuję...</div>;
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -88,7 +87,9 @@ const Contact = () => {
           <p>
             <strong>Adres:</strong> Lipiny 1, 92-701 Łódź
           </p>
-          {isMapLoading && <Loader />}
+          {isMapLoading && (
+            <Loader containerClassName={styles.loaderContainer} />
+          )}
           <iframe
             className={styles.mapContainer}
             style={{
