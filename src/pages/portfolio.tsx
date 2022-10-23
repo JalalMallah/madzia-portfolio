@@ -38,8 +38,8 @@ const cards = [
   {
     id: 5,
     src: '/images/okolicznosciowe.jpg',
-    targetUrl: 'urodziny_imprezy_okolicznosciowe',
-    title: 'Urodziny & Imprezy Okolicznościowe',
+    targetUrl: 'imprezy_okolicznosciowe',
+    title: 'Imprezy Okolicznościowe',
   },
   {
     id: 6,
@@ -49,9 +49,9 @@ const cards = [
   },
   {
     id: 7,
-    src: '/images/inne.jpg',
-    targetUrl: 'inne',
-    title: 'Inne',
+    src: '/images/portrety.jpg',
+    targetUrl: 'portrety',
+    title: 'Portrety',
   },
 ];
 
