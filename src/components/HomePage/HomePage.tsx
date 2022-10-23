@@ -7,6 +7,10 @@ import styles from './homePage.module.scss';
 const Home = () => {
   const router = useRouter();
 
+  const goToContacts = () => {
+    router.push(routes.CONTACT);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.leftColumn}>
@@ -17,10 +21,7 @@ const Home = () => {
         <h3 className={styles.subtitle}>
           Uwieczniam wspomnienia robiąc świetne zdjęcia!
         </h3>
-        <button
-          className={styles.cta}
-          onClick={() => router.push(routes.CONTACT)}
-        >
+        <button className={styles.cta} onClick={goToContacts}>
           Umów się na sesję!
         </button>
       </div>
