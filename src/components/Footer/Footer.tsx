@@ -20,10 +20,14 @@ const Footer = () => {
         społeczność, Programu Rozwoju Obszarów Wiejskich na lata 2014-2020.
       </div>
       <div className={styles.logosContainer}>
-        <img src='/ster.jpg' alt='Ster' className={styles.footerImage} />
-        <img src='/ue.jpg' alt='UE' className={styles.footerImage} />
-        <img src='/leader.png' alt='Leader' className={styles.footerImage} />
-        <img src='/prow.jpg' alt='PROW' className={styles.footerImage} />
+        <img src='/logos/ster.jpg' alt='Ster' className={styles.footerImage} />
+        <img src='/logos/ue.jpg' alt='UE' className={styles.footerImage} />
+        <img
+          src='/logos/leader.png'
+          alt='Leader'
+          className={styles.footerImage}
+        />
+        <img src='/logos/prow.jpg' alt='PROW' className={styles.footerImage} />
       </div>
     </footer>
   );
