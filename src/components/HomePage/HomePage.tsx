@@ -32,7 +32,7 @@ const Home = () => {
           className={`${styles.image} ${styles.firstImage}`}
         />
         <img
-          src='/images/inne_pionowe.jpg'
+          src='/images/natalia.jpg'
           alt='home picture'
           className={`${styles.image} ${styles.secondImage}`}
         />
@@ -42,7 +42,6 @@ const Home = () => {
           className={`${styles.image} ${styles.thirdImage}`}
         />
       </div>
-      {/* <div className={styles.backgroundImage} /> */}
     </div>
   );
 };
