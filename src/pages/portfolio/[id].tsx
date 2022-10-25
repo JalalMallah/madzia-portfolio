@@ -187,7 +187,58 @@ const renderFamily = () => (
   </div>
 );
 
-const renderSpecialEvents = () => <h3>Special Events</h3>;
+const renderSpecialEvents = () => (
+  <div className={styles.images}>
+    <div className={styles.column}>
+      <img
+        src='/images/specialEvents/01.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+      <img
+        src='/images/specialEvents/02.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+    </div>
+    <div className={styles.column}>
+      <img
+        src='/images/specialEvents/03.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+      <img
+        src='/images/specialEvents/04.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+    </div>
+    <div className={styles.column}>
+      <img
+        src='/images/specialEvents/05.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+      <img
+        src='/images/specialEvents/06.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+    </div>
+    <div className={styles.column}>
+      <img
+        src='/images/specialEvents/07.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+      <img
+        src='/images/specialEvents/08.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+    </div>
+  </div>
+);
 
 const renderRomantic = () => (
   <div className={styles.images}>
@@ -214,7 +265,58 @@ const renderRomantic = () => (
   </div>
 );
 
-const renderPortraits = () => <h3>Portraits</h3>;
+const renderPortraits = () => (
+  <div className={styles.images}>
+    <div className={styles.column}>
+      <img
+        src='/images/portraits/01.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+      <img
+        src='/images/portraits/02.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+    </div>
+    <div className={styles.column}>
+      <img
+        src='/images/portraits/03.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+      <img
+        src='/images/portraits/04.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+    </div>
+    <div className={styles.column}>
+      <img
+        src='/images/portraits/05.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+      <img
+        src='/images/portraits/06.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+    </div>
+    <div className={styles.column}>
+      <img
+        src='/images/portraits/07.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+      <img
+        src='/images/portraits/08.jpg'
+        alt='Image'
+        className={styles.image}
+      />
+    </div>
+  </div>
+);
 
 const renderImages = (category: Categories) => {
   switch (category) {
