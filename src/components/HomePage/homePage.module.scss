@@ -74,19 +74,6 @@
   height: calc(320px * 9 / 16);
 }
 
-// .backgroundImage {
-//   z-index: -1;
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   background-image: url('/images/background.jpg');
-//   background-size: cover;
-//   background-position: center 90%;
-//   background-repeat: no-repeat;
-// }
-
 @media (max-width: 1200px) {
   .title {
     font-size: 4rem;
