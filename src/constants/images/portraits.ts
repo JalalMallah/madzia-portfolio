@@ -1,45 +1,45 @@
 import { uuid } from 'uuidv4';
 
-export const baptism = {
-  altText: 'Chrzciny',
+export const portraits = {
+  altText: 'Portrety',
   firstColumn: [
     {
       id: uuid(),
-      src: '/images/baptism/01.jpg',
+      src: '/images/portraits/01.jpg',
     },
     {
       id: uuid(),
-      src: '/images/baptism/02.jpg',
+      src: '/images/portraits/02.jpg',
     },
   ],
   secondColumn: [
     {
       id: uuid(),
-      src: '/images/baptism/03.jpg',
+      src: '/images/portraits/03.jpg',
     },
     {
       id: uuid(),
-      src: '/images/baptism/04.jpg',
+      src: '/images/portraits/04.jpg',
     },
   ],
   thirdColumn: [
     {
       id: uuid(),
-      src: '/images/baptism/05.jpg',
+      src: '/images/portraits/05.jpg',
     },
     {
       id: uuid(),
-      src: '/images/baptism/06.jpg',
+      src: '/images/portraits/06.jpg',
     },
   ],
   fourthColumn: [
     {
       id: uuid(),
-      src: '/images/baptism/07.jpg',
+      src: '/images/portraits/07.jpg',
     },
     {
       id: uuid(),
-      src: '/images/baptism/08.jpg',
+      src: '/images/portraits/08.jpg',
     },
   ],
 };

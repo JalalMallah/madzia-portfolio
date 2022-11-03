@@ -1,9 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from 'next/router';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import PageTitle from 'components/PageTitle';
 
-import styles from './category.module.scss';
+import { baptism } from 'constants/images/baptism';
+import { weddings } from 'constants/images/weddings';
+import { communions } from 'constants/images/communions';
+import { outdoor } from 'constants/images/outdoor';
+import { family } from 'constants/images/family';
+import { specialEvents } from 'constants/images/specialEvents';
+import { romantic } from 'constants/images/romantic';
+import { portraits } from 'constants/images/portraits';
+
+import 'react-lazy-load-image-component/src/effects/opacity.css';
+
+import styles from '../../styles/category.module.scss';
 
 type Categories =
   | 'chrzciny'
@@ -14,6 +26,11 @@ type Categories =
   | 'imprezy_okolicznosciowe'
   | 'sesje_romantyczne'
   | 'portrety';
+
+type Image = {
+  id: string;
+  src: string;
+};
 
 const getPageTitle = (category: Categories) => {
   switch (category) {
@@ -38,304 +55,78 @@ const getPageTitle = (category: Categories) => {
   }
 };
 
-const renderBaptism = () => (
-  <div className={styles.images}>
-    <div className={styles.column}>
-      <img src='/images/baptism/01.jpg' alt='Image' className={styles.image} />
-      <img src='/images/baptism/02.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/baptism/03.jpg' alt='Image' className={styles.image} />
-      <img src='/images/baptism/04.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/baptism/05.jpg' alt='Image' className={styles.image} />
-      <img src='/images/baptism/06.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/baptism/07.jpg' alt='Image' className={styles.image} />
-      <img src='/images/baptism/08.jpg' alt='Image' className={styles.image} />
-    </div>
-  </div>
-);
+const renderImages = (data: any) => {
+  const { altText, firstColumn, secondColumn, thirdColumn, fourthColumn } =
+    data;
 
-const renderWeddings = () => (
-  <div className={styles.images}>
-    <div className={styles.column}>
-      <img src='/images/weddings/01.jpg' alt='Image' className={styles.image} />
-      <img src='/images/weddings/02.jpg' alt='Image' className={styles.image} />
-      <img src='/images/weddings/03.jpg' alt='Image' className={styles.image} />
+  return (
+    <div className={styles.images}>
+      <div className={styles.column}>
+        {firstColumn.map(({ id, src }: Image) => (
+          <LazyLoadImage
+            key={id}
+            src={src}
+            alt={altText}
+            className={styles.image}
+            effect='opacity'
+          />
+        ))}
+      </div>
+      <div className={styles.column}>
+        {secondColumn.map(({ id, src }: Image) => (
+          <LazyLoadImage
+            key={id}
+            src={src}
+            alt={altText}
+            className={styles.image}
+            effect='opacity'
+          />
+        ))}
+      </div>
+      <div className={styles.column}>
+        {thirdColumn.map(({ id, src }: Image) => (
+          <LazyLoadImage
+            key={id}
+            src={src}
+            alt={altText}
+            className={styles.image}
+            effect='opacity'
+          />
+        ))}
+      </div>
+      <div className={styles.column}>
+        {fourthColumn.map(({ id, src }: Image) => (
+          <LazyLoadImage
+            key={id}
+            src={src}
+            alt={altText}
+            className={styles.image}
+            effect='opacity'
+          />
+        ))}
+      </div>
     </div>
-    <div className={styles.column}>
-      <img src='/images/weddings/04.jpg' alt='Image' className={styles.image} />
-      <img src='/images/weddings/05.jpg' alt='Image' className={styles.image} />
-      <img src='/images/weddings/06.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/weddings/07.jpg' alt='Image' className={styles.image} />
-      <img src='/images/weddings/08.jpg' alt='Image' className={styles.image} />
-      <img src='/images/weddings/09.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/weddings/10.jpg' alt='Image' className={styles.image} />
-      <img src='/images/weddings/11.jpg' alt='Image' className={styles.image} />
-      <img src='/images/weddings/12.jpg' alt='Image' className={styles.image} />
-    </div>
-  </div>
-);
+  );
+};
 
-const renderCommunions = () => (
-  <div className={styles.images}>
-    <div className={styles.column}>
-      <img
-        src='/images/communions/01.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/communions/02.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-    <div className={styles.column}>
-      <img
-        src='/images/communions/03.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/communions/04.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-    <div className={styles.column}>
-      <img
-        src='/images/communions/05.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/communions/06.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-    <div className={styles.column}>
-      <img
-        src='/images/communions/07.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/communions/08.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-  </div>
-);
-
-const renderOutdoor = () => (
-  <div className={styles.images}>
-    <div className={styles.column}>
-      <img src='/images/outdoor/01.jpg' alt='Image' className={styles.image} />
-      <img src='/images/outdoor/02.jpg' alt='Image' className={styles.image} />
-      <img src='/images/outdoor/03.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/outdoor/04.jpg' alt='Image' className={styles.image} />
-      <img src='/images/outdoor/05.jpg' alt='Image' className={styles.image} />
-      <img src='/images/outdoor/06.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/outdoor/07.jpg' alt='Image' className={styles.image} />
-      <img src='/images/outdoor/08.jpg' alt='Image' className={styles.image} />
-      <img src='/images/outdoor/09.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/outdoor/10.jpg' alt='Image' className={styles.image} />
-      <img src='/images/outdoor/11.jpg' alt='Image' className={styles.image} />
-      <img src='/images/outdoor/12.jpg' alt='Image' className={styles.image} />
-    </div>
-  </div>
-);
-
-const renderFamily = () => (
-  <div className={styles.images}>
-    <div className={styles.column}>
-      <img src='/images/family/01.jpg' alt='Image' className={styles.image} />
-      <img src='/images/family/02.jpg' alt='Image' className={styles.image} />
-      <img src='/images/family/03.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/family/04.jpg' alt='Image' className={styles.image} />
-      <img src='/images/family/05.jpg' alt='Image' className={styles.image} />
-      <img src='/images/family/06.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/family/07.jpg' alt='Image' className={styles.image} />
-      <img src='/images/family/08.jpg' alt='Image' className={styles.image} />
-      <img src='/images/family/09.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/family/10.jpg' alt='Image' className={styles.image} />
-      <img src='/images/family/11.jpg' alt='Image' className={styles.image} />
-      <img src='/images/family/12.jpg' alt='Image' className={styles.image} />
-    </div>
-  </div>
-);
-
-const renderSpecialEvents = () => (
-  <div className={styles.images}>
-    <div className={styles.column}>
-      <img
-        src='/images/specialEvents/01.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/specialEvents/02.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-    <div className={styles.column}>
-      <img
-        src='/images/specialEvents/03.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/specialEvents/04.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-    <div className={styles.column}>
-      <img
-        src='/images/specialEvents/05.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/specialEvents/06.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-    <div className={styles.column}>
-      <img
-        src='/images/specialEvents/07.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/specialEvents/08.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-  </div>
-);
-
-const renderRomantic = () => (
-  <div className={styles.images}>
-    <div className={styles.column}>
-      <img src='/images/romantic/01.jpg' alt='Image' className={styles.image} />
-      <img src='/images/romantic/02.jpg' alt='Image' className={styles.image} />
-      <img src='/images/romantic/03.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/romantic/04.jpg' alt='Image' className={styles.image} />
-      <img src='/images/romantic/05.jpg' alt='Image' className={styles.image} />
-      <img src='/images/romantic/06.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/romantic/07.jpg' alt='Image' className={styles.image} />
-      <img src='/images/romantic/08.jpg' alt='Image' className={styles.image} />
-      <img src='/images/romantic/09.jpg' alt='Image' className={styles.image} />
-    </div>
-    <div className={styles.column}>
-      <img src='/images/romantic/10.jpg' alt='Image' className={styles.image} />
-      <img src='/images/romantic/11.jpg' alt='Image' className={styles.image} />
-      <img src='/images/romantic/12.jpg' alt='Image' className={styles.image} />
-    </div>
-  </div>
-);
-
-const renderPortraits = () => (
-  <div className={styles.images}>
-    <div className={styles.column}>
-      <img
-        src='/images/portraits/01.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/portraits/02.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-    <div className={styles.column}>
-      <img
-        src='/images/portraits/03.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/portraits/04.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-    <div className={styles.column}>
-      <img
-        src='/images/portraits/05.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/portraits/06.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-    <div className={styles.column}>
-      <img
-        src='/images/portraits/07.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-      <img
-        src='/images/portraits/08.jpg'
-        alt='Image'
-        className={styles.image}
-      />
-    </div>
-  </div>
-);
-
-const renderImages = (category: Categories) => {
+const renderContent = (category: Categories) => {
   switch (category) {
     case 'chrzciny':
-      return renderBaptism();
+      return renderImages(baptism);
     case 'sluby_i_wesela':
-      return renderWeddings();
+      return renderImages(weddings);
     case 'komunie':
-      return renderCommunions();
+      return renderImages(communions);
     case 'sesje_plenerowe':
-      return renderOutdoor();
+      return renderImages(outdoor);
     case 'sesje_rodzinne':
-      return renderFamily();
+      return renderImages(family);
     case 'imprezy_okolicznosciowe':
-      return renderSpecialEvents();
+      return renderImages(specialEvents);
     case 'sesje_romantyczne':
-      return renderRomantic();
+      return renderImages(romantic);
     case 'portrety':
-      return renderPortraits();
+      return renderImages(portraits);
     default:
       return '';
   }
@@ -348,7 +139,7 @@ const Category = () => {
   return (
     <>
       <PageTitle text={getPageTitle(category as Categories)} />
-      {renderImages(category as Categories)}
+      {renderContent(category as Categories)}
     </>
   );
 };

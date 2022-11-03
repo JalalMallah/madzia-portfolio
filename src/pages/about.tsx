@@ -1,5 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import PageTitle from 'components/PageTitle';
+import Loader from 'components/Loader/Loader';
+
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 import styles from '../styles/about.module.scss';
 
@@ -9,7 +14,12 @@ const About = () => {
       <PageTitle text='O Mnie' />
       <div className={styles.layout}>
         <section className={styles.leftColumn}>
-          <img src='/images/madzia.jpg' alt='Photographer' />
+          <LazyLoadImage
+            src='/images/madzia.jpg'
+            alt='Photographer'
+            effect='opacity'
+            visibleByDefault={true}
+          />
         </section>
         <section className={styles.rightColumn}>
           <p className={styles.textBox}>
