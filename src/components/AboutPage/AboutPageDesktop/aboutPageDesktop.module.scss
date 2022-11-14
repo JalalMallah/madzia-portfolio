@@ -1,4 +1,5 @@
 .container {
+  display: block;
   max-width: 1400px;
   margin: 0 auto 30px;
   text-align: center;
@@ -35,4 +36,10 @@
 
 .specsBox {
   margin-bottom: 5px;
+}
+
+@media (max-width: 420px) {
+  .container {
+    display: none;
+  }
 }

@@ -13,9 +13,8 @@ import { specialEvents } from 'constants/images/specialEvents';
 import { romantic } from 'constants/images/romantic';
 import { portraits } from 'constants/images/portraits';
 
-import 'react-lazy-load-image-component/src/effects/opacity.css';
-
 import styles from '../../styles/category.module.scss';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 type Categories =
   | 'chrzciny'

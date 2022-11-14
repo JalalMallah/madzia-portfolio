@@ -1,0 +1,32 @@
+.container {
+  display: none;
+}
+
+.textBox {
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.subtitle {
+  margin: 0 0 10px;
+}
+
+.specsBox {
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin: 0 0 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      margin: 0 0 20px;
+    }
+  }
+}

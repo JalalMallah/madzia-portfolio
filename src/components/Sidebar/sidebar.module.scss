@@ -1,0 +1,62 @@
+@import '../../styles/colors';
+
+.sidebar {
+  display: none;
+}
+
+.active {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 5px;
+    height: 100%;
+    background-color: $text-dark;
+  }
+}
+
+@media (max-width: 420px) {
+  .sidebar {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    display: block;
+    background-color: $white;
+    transition: transform 0.2s ease;
+  }
+
+  .active {
+    transform: translateX(0);
+  }
+
+  .xMark {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: $text-dark;
+    mask-image: url('/icons/xmark.svg');
+    mask-size: 40px 40px;
+    mask-position: top left;
+    mask-repeat: no-repeat;
+  }
+
+  .menu {
+    margin: 20rem 0 0;
+    padding: 0 4rem;
+    list-style-type: none;
+  }
+
+  .menuItem {
+    position: relative;
+    margin: 0 0 2rem;
+    font-size: 3rem;
+  }
+}

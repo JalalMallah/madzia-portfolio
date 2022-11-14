@@ -42,6 +42,7 @@ const Contact = () => {
       <PageTitle text='Kontakt' />
       <div className={styles.layout}>
         <section className={styles.leftColumn}>
+          <h4 className={styles.leftColumnTitle}>Napisz do mnie:</h4>
           <form className={styles.form} onSubmit={handleFormSubmit}>
             <div className={styles.formRow}>
               <label htmlFor='name'>Imię</label>

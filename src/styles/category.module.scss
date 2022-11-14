@@ -18,3 +18,19 @@
   margin: 0 0 5px;
   vertical-align: middle;
 }
+
+@media (max-width: 420px) {
+  .images {
+    flex-wrap: wrap;
+    margin: 0 0 20px;
+  }
+
+  .column {
+    flex: 45%;
+    margin: 0;
+
+    &:nth-child(odd) {
+      margin-right: 5px;
+    }
+  }
+}
