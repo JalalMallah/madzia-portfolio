@@ -6,7 +6,7 @@ import { INSTAGRAM_URL, FACEBOOK_URL } from 'constants/URLs';
 import styles from './navbarMobile.module.scss';
 
 const NavbarMobile = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => setIsSidebarOpen((prev) => !prev);
 

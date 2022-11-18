@@ -16,7 +16,7 @@ const Sidebar = ({ isOpen, toggleSidebar }: Props) => {
 
   const isHomeRoute = pathname === routes.HOME;
   const isAboutRoute = pathname === routes.ABOUT;
-  const isPortfolioRoute = pathname === routes.PORTFOLIO;
+  const isPortfolioRoute = pathname.includes(routes.PORTFOLIO);
   const isContactRoute = pathname === routes.CONTACT;
   return (
     <div

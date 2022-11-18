@@ -57,3 +57,9 @@
     mask-size: 30px 30px;
   }
 }
+
+@media (max-width: 360px) {
+  .container {
+    margin: 2rem auto 1rem;
+  }
+}

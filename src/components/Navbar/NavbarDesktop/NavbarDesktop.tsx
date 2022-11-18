@@ -18,7 +18,7 @@ const NavbarDesktop = () => {
 
   const isHomeRoute = pathname === routes.HOME;
   const isAboutRoute = pathname === routes.ABOUT;
-  const isPortfolioRoute = pathname === routes.PORTFOLIO;
+  const isPortfolioRoute = pathname.includes(routes.PORTFOLIO);
   const isContactRoute = pathname === routes.CONTACT;
 
   return (
@@ -69,7 +69,9 @@ const NavbarDesktop = () => {
             rel='noreferrer'
             className={styles.soMeIcon}
           >
-            <FontAwesomeIcon icon={faFacebook} />
+            <span
+              className={classNames(styles.maskedIcon, styles.facebookIcon)}
+            />
           </a>
           <a
             href={INSTAGRAM_URL}
@@ -77,7 +79,9 @@ const NavbarDesktop = () => {
             rel='noreferrer'
             className={styles.soMeIcon}
           >
-            <FontAwesomeIcon icon={faInstagram} />
+            <span
+              className={classNames(styles.maskedIcon, styles.instagramIcon)}
+            />
           </a>
         </div>
       </div>

@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 20px auto 40px;
+  margin: 20px auto;
 }
 
 .logo {
@@ -24,12 +24,12 @@
   @include list-reset();
 
   display: flex;
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .menuItem {
   position: relative;
-  margin-right: 20px;
+  margin-right: 18px;
   color: $text-dark;
   font-family: $display-font;
   font-size: 1.4rem;
@@ -65,16 +65,31 @@
 
 .soMeIcons {
   display: flex;
+  padding: 0 0 0.5rem;
 }
 
 .soMeIcon {
   display: inline-block;
-  // width: 20px;
   cursor: pointer;
+}
 
-  // &:first-child {
-  //   margin-right: 10px;
-  // }
+.maskedIcon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: $text-dark;
+  mask-size: 20px 20px;
+  mask-position: top left;
+  mask-repeat: no-repeat;
+}
+
+.facebookIcon {
+  mask-image: url('/icons/facebook.svg');
+}
+
+.instagramIcon {
+  margin-left: 8px;
+  mask-image: url('/icons/instagram.svg');
 }
 
 @media (max-width: 820px) {
