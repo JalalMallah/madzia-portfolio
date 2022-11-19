@@ -5,9 +5,6 @@ import classNames from 'classnames';
 import routes from 'constants/routes';
 import { INSTAGRAM_URL, FACEBOOK_URL } from 'constants/URLs';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
-
 import logo from '../../../../public/logo.png';
 
 import styles from './navbarDesktop.module.scss';
