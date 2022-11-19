@@ -44,6 +44,12 @@
   color: $black;
 }
 
+@media (max-device-width: 896px) and (orientation: landscape) {
+  .footer {
+    height: auto;
+  }
+}
+
 @media (max-width: 420px) {
   .footer {
     padding: 0 0 2rem;
