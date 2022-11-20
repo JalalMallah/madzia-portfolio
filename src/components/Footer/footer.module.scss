@@ -50,7 +50,20 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-device-width: 424px) and (orientation: portrait) {
+  .footer {
+    height: auto;
+    padding: 0 0 2rem;
+    font-size: 1.2rem;
+  }
+
+  .footerImage {
+    height: 40px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 424px) {
   .footer {
     padding: 0 0 2rem;
     font-size: 1.2rem;

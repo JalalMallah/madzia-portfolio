@@ -60,6 +60,28 @@
   }
 }
 
+@media (max-device-width: 424px) and (orientation: portrait) {
+  .logoContainer {
+    width: 200px;
+    height: 200px;
+  }
+
+  .title {
+    margin: 1rem 0 2rem;
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    margin: 0 0 3rem;
+    font-size: 2.2rem;
+  }
+
+  .cta {
+    padding: 10px 15px;
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 420px) {
   .logoContainer {
     width: 200px;

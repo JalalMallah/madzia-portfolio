@@ -3,13 +3,19 @@
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
-  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   margin: 0 auto;
   padding: 0 50px;
 }
 
 .main {
   flex: 1;
+}
+
+@media (max-device-width: 424px) and (orientation: portrait) {
+  .layout {
+    padding: 0 2rem;
+  }
 }
 
 @media (max-width: 420px) {

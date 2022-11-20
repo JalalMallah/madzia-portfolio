@@ -46,6 +46,18 @@
   }
 }
 
+@media (max-device-width: 424px) and (orientation: portrait) {
+  .container {
+    margin: 2rem auto;
+  }
+
+  .maskedIcon {
+    width: 30px;
+    height: 30px;
+    mask-size: 30px 30px;
+  }
+}
+
 @media (max-width: 420px) {
   .container {
     margin: 2rem auto;

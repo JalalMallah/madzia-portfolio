@@ -11,6 +11,10 @@ const HomePageDesktop = () => {
     router.push(routes.CONTACT);
   };
 
+  const goToPortfolioPage = () => {
+    router.push(routes.PORTFOLIO);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.leftColumn}>
@@ -30,16 +34,19 @@ const HomePageDesktop = () => {
           src='/images/rodzinne.jpg'
           alt='home picture'
           className={`${styles.image} ${styles.firstImage}`}
+          onClick={goToPortfolioPage}
         />
         <img
           src='/images/natalia.jpg'
           alt='home picture'
           className={`${styles.image} ${styles.secondImage}`}
+          onClick={goToPortfolioPage}
         />
         <img
           src='/images/romantyczne.jpg'
           alt='home picture'
           className={`${styles.image} ${styles.thirdImage}`}
+          onClick={goToPortfolioPage}
         />
       </div>
     </div>

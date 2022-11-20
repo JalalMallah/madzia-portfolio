@@ -29,9 +29,14 @@
   align-items: center;
   width: 280px;
   padding: 3rem 0;
+  transition: transform 0.15s ease;
 
   a {
     width: 250px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -39,7 +44,7 @@
   display: block;
   width: 40px;
   height: 40px;
-  margin: 0 0 2rem;
+  margin: 0 0 1.5rem;
   background-color: $text-dark;
   mask-size: 40px 40px;
   mask-position: top left;
@@ -66,13 +71,29 @@
   mask-image: url('/icons/location.svg');
 }
 
+@media (max-device-width: 424px) and (orientation: portrait) {
+  .innerWrapper p {
+    margin: 0 0 1.5rem;
+  }
+
+  .contactItem {
+    margin: 0 0 3rem;
+    padding: 1rem 0;
+  }
+
+  .maskedIcon {
+    margin: 0 0 1rem;
+  }
+}
+
 @media (max-width: 360px) {
   .innerWrapper p {
     margin: 0 0 1.5rem;
   }
 
   .contactItem {
-    padding: 1rem 0 3rem;
+    margin: 0 0 3rem;
+    padding: 1rem 0;
   }
 
   .maskedIcon {

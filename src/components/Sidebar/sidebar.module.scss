@@ -66,6 +66,20 @@
   }
 }
 
+@media (max-device-width: 424px) and (orientation: portrait) {
+  .xMark {
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    mask-size: 40px 40px;
+  }
+
+  .menu {
+    padding: 0 4rem;
+  }
+}
+
 @media (max-width: 420px) {
   .xMark {
     top: 20px;
