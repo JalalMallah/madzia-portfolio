@@ -25,6 +25,7 @@ const NavbarDesktop = () => {
         alt='Logo'
         width={120}
         height={100}
+        priority
         onClick={() => router.push(routes.HOME)}
         className={styles.logo}
       />

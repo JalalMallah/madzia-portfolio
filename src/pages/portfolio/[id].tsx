@@ -137,7 +137,7 @@ const Category = () => {
 
   return (
     <>
-      <PageTitle text={getPageTitle(category as Categories)} />
+      <PageTitle text={getPageTitle(category as Categories)} withBackArrow />
       {renderContent(category as Categories)}
     </>
   );

@@ -1,7 +1,28 @@
 @import '../../styles/font-variables';
 
 .pageTitle {
+  position: relative;
   margin-bottom: 30px;
   font-family: $display-font;
   text-align: center;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.backArrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: $text-font;
+  line-height: 3.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 424px) {
+  .backArrow {
+    display: none;
+  }
 }

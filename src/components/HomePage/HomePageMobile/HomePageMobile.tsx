@@ -20,6 +20,7 @@ const HomePageMobile = () => {
           alt='Logo'
           layout='fill'
           objectFit='contain'
+          priority
           onClick={goToHomePage}
         />
       </div>
@@ -28,7 +29,7 @@ const HomePageMobile = () => {
         <br /> <span className={styles.name}>Magdalena Sobkiewicz</span>.
       </h1>
       <h3 className={styles.subtitle}>
-        Uwieczniam wspomnienia robiąc świetne zdjęcia!
+        Uwieczniam wspomnienia robiąc wyjątkowe zdjęcia!
       </h3>
       <button className={styles.cta} onClick={goToContactPage}>
         Umów się na sesję!
