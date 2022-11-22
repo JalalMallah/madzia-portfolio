@@ -6,7 +6,7 @@ import styles from 'styles/portfolio.module.scss';
 const cards = [
   {
     id: 0,
-    src: '/images/cards/portraits.jpg',
+    src: '/images/cards/studio.jpg',
     targetUrl: 'sesje_studyjne',
     title: 'Sesje Studyjne',
   },
