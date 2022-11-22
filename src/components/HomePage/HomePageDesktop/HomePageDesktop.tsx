@@ -31,7 +31,7 @@ const HomePageDesktop = () => {
       </div>
       <div className={styles.rightColumn}>
         <img
-          src='/images/rodzinne.jpg'
+          src='/images/cards/family.jpg'
           alt='home picture'
           className={`${styles.image} ${styles.firstImage}`}
           onClick={goToPortfolioPage}
@@ -43,7 +43,7 @@ const HomePageDesktop = () => {
           onClick={goToPortfolioPage}
         />
         <img
-          src='/images/romantyczne.jpg'
+          src='/images/cards/romantic.jpg'
           alt='home picture'
           className={`${styles.image} ${styles.thirdImage}`}
           onClick={goToPortfolioPage}

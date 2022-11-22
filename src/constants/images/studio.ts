@@ -1,45 +1,45 @@
 import { uuid } from 'uuidv4';
 
-export const baptism = {
-  altText: 'Chrzciny',
+export const studio = {
+  altText: 'Sesje Studyjne',
   firstColumn: [
     {
       id: uuid(),
-      src: '/images/baptism/01.jpg',
+      // src: '/images/studio/01.jpg',
     },
     {
       id: uuid(),
-      src: '/images/baptism/02.jpg',
+      // src: '/images/studio/02.jpg',
     },
   ],
   secondColumn: [
     {
       id: uuid(),
-      src: '/images/baptism/03.jpg',
+      // src: '/images/studio/03.jpg',
     },
     {
       id: uuid(),
-      src: '/images/baptism/04.jpg',
+      // src: '/images/studio/04.jpg',
     },
   ],
   thirdColumn: [
     {
       id: uuid(),
-      src: '/images/baptism/05.jpg',
+      // src: '/images/studio/05.jpg',
     },
     {
       id: uuid(),
-      src: '/images/baptism/06.jpg',
+      // src: '/images/studio/06.jpg',
     },
   ],
   fourthColumn: [
     {
       id: uuid(),
-      src: '/images/baptism/07.jpg',
+      // src: '/images/studio/07.jpg',
     },
     {
       id: uuid(),
-      src: '/images/baptism/08.jpg',
+      // src: '/images/studio/08.jpg',
     },
   ],
 };

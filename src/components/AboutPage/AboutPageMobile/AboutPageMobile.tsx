@@ -42,8 +42,9 @@ const AboutPageMobile = () => {
       <p className={styles.textBox}>
         Każde przyjęcie to nowi ludzie, miejsca i emocje. Choć wydaje się, że
         przecież to kolejny chrzest, komunia, ślub… jest to coś zupełnie nowego,
-        innego. Do każdego podchodzę indywidualnie, dlatego tez jestem gotowa na
-        szalone pomysły moich Klientów. MARZY WAM SIĘ? Napiszcie o tym do mnie.
+        innego. Do każdego podchodzę indywidualnie, dlatego też jestem gotowa na
+        szalone pomysły moich Klientów. Macie własny, który byście chcieli
+        zrealizować? Napiszcie o tym do mnie.
       </p>
       <p className={styles.textBox}>
         Przede wszystkim zależy mi na tym, aby moi Klienci czuli się swobodnie i

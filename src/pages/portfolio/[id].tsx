@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import PageTitle from 'components/PageTitle';
 
-import { baptism } from 'constants/images/baptism';
+import { studio } from 'constants/images/studio';
 import { weddings } from 'constants/images/weddings';
 import { communions } from 'constants/images/communions';
 import { outdoor } from 'constants/images/outdoor';
@@ -17,9 +17,9 @@ import styles from '../../styles/category.module.scss';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 type Categories =
-  | 'chrzciny'
+  | 'sesje_studyjne'
   | 'sluby_i_wesela'
-  | 'komunie'
+  | 'komunie_i_chrzciny'
   | 'sesje_plenerowe'
   | 'sesje_rodzinne'
   | 'imprezy_okolicznosciowe'
@@ -33,12 +33,12 @@ type Image = {
 
 const getPageTitle = (category: Categories) => {
   switch (category) {
-    case 'chrzciny':
-      return 'Chrzciny';
+    case 'sesje_studyjne':
+      return 'Sesje Studyjne';
     case 'sluby_i_wesela':
       return 'Śluby & Wesela';
-    case 'komunie':
-      return 'Komunie';
+    case 'komunie_i_chrzciny':
+      return 'Komunie & Chrzciny';
     case 'sesje_plenerowe':
       return 'Sesje Plenerowe';
     case 'sesje_rodzinne':
@@ -110,11 +110,11 @@ const renderImages = (data: any) => {
 
 const renderContent = (category: Categories) => {
   switch (category) {
-    case 'chrzciny':
-      return renderImages(baptism);
+    case 'sesje_studyjne':
+      return renderImages(studio);
     case 'sluby_i_wesela':
       return renderImages(weddings);
-    case 'komunie':
+    case 'komunie_i_chrzciny':
       return renderImages(communions);
     case 'sesje_plenerowe':
       return renderImages(outdoor);
