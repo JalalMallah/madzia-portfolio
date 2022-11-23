@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from 'next/router';
 import routes from 'constants/routes';
+import { josefin } from 'components/Layout/Layout';
+import classNames from 'classnames';
 
 import styles from './homePageDesktop.module.scss';
 
@@ -20,7 +22,11 @@ const HomePageDesktop = () => {
       <div className={styles.leftColumn}>
         <h1 className={styles.title}>
           Nazywam się
-          <br /> <span className={styles.name}>Magdalena Sobkiewicz</span>.
+          <br />{' '}
+          <span className={classNames(styles.name, josefin.className)}>
+            Magdalena Sobkiewicz
+          </span>
+          .
         </h1>
         <h3 className={styles.subtitle}>
           Uwieczniam wspomnienia robiąc wyjątkowe zdjęcia!

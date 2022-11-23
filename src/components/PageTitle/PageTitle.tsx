@@ -1,4 +1,6 @@
 import { useRouter } from 'next/router';
+import { josefin, nunito } from 'components/Layout/Layout';
+import classNames from 'classnames';
 
 import styles from './pageTitle.module.scss';
 
@@ -11,9 +13,12 @@ const PageTitle = ({ text, withBackArrow = false }: Props) => {
   const router = useRouter();
 
   return (
-    <div className={styles.pageTitle}>
+    <div className={classNames(styles.pageTitle, josefin.className)}>
       {withBackArrow && (
-        <span className={styles.backArrow} onClick={router.back}>
+        <span
+          className={classNames(styles.backArrow, nunito.className)}
+          onClick={router.back}
+        >
           &larr; Cofnij
         </span>
       )}

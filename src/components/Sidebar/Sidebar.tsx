@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import Link from 'next/link';
 import routes from 'constants/routes';
+import { josefin } from 'components/Layout/Layout';
 
 import styles from './sidebar.module.scss';
 
@@ -25,7 +26,7 @@ const Sidebar = ({ isOpen, toggleSidebar }: Props) => {
       })}
     >
       <span className={styles.xMark} onClick={toggleSidebar} />
-      <ul className={styles.menu}>
+      <ul className={classNames(styles.menu, josefin.className)}>
         <li
           className={classNames(styles.menuItem, {
             [styles.active]: isHomeRoute,

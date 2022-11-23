@@ -1,6 +1,5 @@
 @import '../../../styles/mixins';
 @import '../../../styles/colors';
-@import '../../../styles/font-variables';
 
 .container {
   position: relative;
@@ -31,7 +30,6 @@
   position: relative;
   margin-right: 18px;
   color: $text-dark;
-  font-family: $display-font;
   font-size: 1.4rem;
   text-transform: uppercase;
 

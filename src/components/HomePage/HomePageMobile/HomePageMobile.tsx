@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import routes from 'constants/routes';
+import { josefin } from 'components/Layout/Layout';
+import classNames from 'classnames';
 
 import logo from '../../../../public/logo.png';
 
@@ -26,7 +28,11 @@ const HomePageMobile = () => {
       </div>
       <h1 className={styles.title}>
         Nazywam się
-        <br /> <span className={styles.name}>Magdalena Sobkiewicz</span>.
+        <br />{' '}
+        <span className={classNames(styles.name, josefin.className)}>
+          Magdalena Sobkiewicz
+        </span>
+        .
       </h1>
       <h3 className={styles.subtitle}>
         Uwieczniam wspomnienia robiąc wyjątkowe zdjęcia!

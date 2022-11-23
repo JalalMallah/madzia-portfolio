@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import routes from 'constants/routes';
 import { INSTAGRAM_URL, FACEBOOK_URL } from 'constants/URLs';
+import { josefin } from 'components/Layout/Layout';
 
 import logo from '../../../../public/logo.png';
 
@@ -30,7 +31,7 @@ const NavbarDesktop = () => {
         className={styles.logo}
       />
       <div className={styles.content}>
-        <ul className={styles.menu}>
+        <ul className={classNames(styles.menu, josefin.className)}>
           <li
             className={classNames(styles.menuItem, {
               [styles.active]: isHomeRoute,

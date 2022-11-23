@@ -1,5 +1,4 @@
 @import '../../../styles/colors';
-@import '../../../styles/font-variables';
 
 .container {
   display: flex;
@@ -38,7 +37,6 @@
 
 .name {
   color: $black;
-  font-family: $display-font;
 }
 
 .rightColumn {

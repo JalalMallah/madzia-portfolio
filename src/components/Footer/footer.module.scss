@@ -1,5 +1,4 @@
 @import '../../styles/colors';
-@import '../../styles/font-variables';
 
 .footer {
   display: flex;
@@ -38,7 +37,6 @@
 
 .footerText {
   margin: 0 0 20px;
-  font-family: $text-font;
   text-align: justify;
   text-align-last: center;
   color: $black;

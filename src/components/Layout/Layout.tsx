@@ -1,10 +1,18 @@
 import { useEffect } from 'react';
 import { PropsWithChildren } from 'react';
+import { Josefin_Sans, Nunito_Sans } from '@next/font/google';
+import classNames from 'classnames';
 
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
 
 import styles from './layout.module.scss';
+
+export const josefin = Josefin_Sans();
+
+export const nunito = Nunito_Sans({
+  weight: '400',
+});
 
 const Layout = ({ children }: PropsWithChildren) => {
   const setVh = () => {
@@ -23,7 +31,7 @@ const Layout = ({ children }: PropsWithChildren) => {
   }, []);
 
   return (
-    <div className={styles.layout}>
+    <div className={classNames(styles.layout, nunito.className)}>
       <Navbar />
       <main className={styles.main}>{children}</main>
       <Footer />

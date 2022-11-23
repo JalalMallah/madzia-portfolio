@@ -1,5 +1,4 @@
 @import '../../styles/colors';
-@import '../../styles/font-variables';
 
 .sidebar {
   display: none;
@@ -60,7 +59,6 @@
   .menuItem {
     position: relative;
     margin: 0 0 2rem;
-    font-family: $display-font;
     font-size: 3rem;
     text-align: center;
   }

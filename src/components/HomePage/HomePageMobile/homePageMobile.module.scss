@@ -1,5 +1,4 @@
 @import '../../../styles/colors';
-@import '../../../styles/font-variables';
 
 .container {
   display: none;
@@ -41,7 +40,6 @@
 
 .name {
   color: $black;
-  font-family: $display-font;
 }
 
 @media (max-device-width: 896px) and (orientation: landscape) {
