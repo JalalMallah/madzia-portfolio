@@ -10,7 +10,7 @@ const PageNotFound = () => {
       <h4 className={styles.text}>
         Wygląda na to, że strona, której szukasz nie istnieje.
       </h4>
-      <Link href={routes.HOME}>
+      <Link href={routes.HOME} legacyBehavior>
         <a className={styles.button}>Powrót do strony głównej</a>
       </Link>
     </div>

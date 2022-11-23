@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  optimizeFonts: false,
+  experimental: {
+    fontLoaders: [
+      {
+        loader: '@next/font/google',
+        options: {
+          subsets: ['latin', 'latin-ext'],
+        },
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;
